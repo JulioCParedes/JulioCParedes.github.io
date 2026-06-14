@@ -1,205 +1,553 @@
 <!DOCTYPE HTML>
+
 <!--
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal and commercial use under the CCA 3.0 license
+	(html5up.net/license)
 -->
-<html>
+
+<html lang="en">
 	<head>
 		<title>Julio César Paredes Castillo | Engineering Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Engineering portfolio of Julio César Paredes Castillo: robotics, ROS 2, embedded systems, computational optimization, and Python software projects." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Home</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Technical Areas</a></li>
-							<li><a href="#three">Contact</a></li>
-						</ul>
-					</nav>
+```
+	<meta charset="utf-8" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+
+	<meta
+		name="description"
+		content="Engineering portfolio of Julio César Paredes Castillo featuring robotics, ROS 2, embedded systems, VHDL digital design, computational optimization, and Python software projects."
+	/>
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Home</a></li>
+					<li><a href="#one">Projects</a></li>
+					<li><a href="#two">Technical Areas</a></li>
+					<li><a href="#three">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Welcome to my portfolio!</h1>
+
+				<p>
+					My name is Julio César Paredes Castillo. I am a Mechatronics
+					Engineer interested in developing intelligent systems that
+					combine software, electronics, optimization, and robotics to
+					solve practical engineering problems. My work focuses on ROS 2,
+					embedded systems, computational optimization, digital design,
+					and Python software development.
+				</p>
+
+				<ul class="actions">
+					<li>
+						<a href="#one" class="button scrolly">View Projects</a>
+					</li>
+
+					<li>
+						<a
+							href="https://github.com/JulioCParedes"
+							class="button"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							GitHub
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section id="one" class="wrapper style2 spotlights">
+
+			<!-- ROS 2 Robot -->
+			<section>
+				<a href="#one" class="image">
+					<img
+						src="images/robot-mapping.png"
+						alt="ROS 2 differential-drive robot performing indoor mapping"
+						data-position="center center"
+					/>
+				</a>
+
+				<div class="content">
+					<div class="inner">
+						<h2>
+							ROS 2 Differential-Drive Robot for Indoor Mapping and
+							Autonomous Navigation
+						</h2>
+
+						<p>
+							Designed and integrated a differential-drive mobile robot
+							for indoor mapping, localization, obstacle avoidance, and
+							autonomous point-to-point navigation. The system combines
+							2D LiDAR readings, wheel odometry, SLAM, path planning,
+							navigation, and embedded motor control.
+						</p>
+
+						<p>
+							<strong>Technologies:</strong>
+							ROS 2 Humble, Raspberry Pi, ESP32, 2D LiDAR, SLAM
+							Toolbox, Nav2, odometry, C, and Python.
+						</p>
+
+						<!--
+							Add the repository button here when the ROS 2 project
+							is available publicly on GitHub.
+
+							Example:
+
+							<ul class="actions">
+								<li>
+									<a
+										href="YOUR_REPOSITORY_URL"
+										class="button"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										View Repository
+									</a>
+								</li>
+							</ul>
+						-->
+					</div>
 				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<!-- PCB Optimization -->
+			<section>
+				<a href="#one" class="image">
+					<img
+						src="images/GeneSolu_3.png"
+						alt="Genetic algorithm solution for PCB drilling path optimization"
+						data-position="top center"
+					/>
+				</a>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Welcome to my portfolio!</h1>
-							<p>My name is Julio Paredes, I am a Mechatronics Engineer deeply interested about designing intelligent systems to reach creative and more sosteinable solutions. I am passionate about software and hardware development, as well as I am currently gaining experience in computational optimization. </p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">View Projects</a></li>
-								<li><a href="https://github.com/Tulito27" class="button">GitHub</a></li>
-							</ul>
-						</div>
-					</section>
+				<div class="content">
+					<div class="inner">
+						<h2>
+							Metaheuristic Optimization for PCB Drilling Path Planning
+						</h2>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/robot-mapping.png" alt="Differential-drive robot project" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>ROS 2 Differential-Drive Robot for Indoor Mapping and Autonomous Navigation</h2>
-									<p>Built a mobile robotic system integrating ROS 2 and algorithms for  LiDAR 2D readings processing, odometry, SLAM, path planning, navigation and motion control</p>
-									<p><strong>Technologies:</strong> ROS 2, Raspberry Pi, ESP32, LiDAR 2D, SLAM Toolbox, Nav2, odometry, C, Python.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/Tulito27/robot_ws" class="button">View Repository</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/GeneSolu_3.png" alt="PCB drilling optimization project" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Metaheuristic Optimization for PCB Drilling Path Planning</h2>
-									<p>Modeled PCB drilling path planning as a combinatorial problem and developed a Genetic algorithm in Python, based in evolutionary computation concepts, to approximate the minimal tool travel distance.</p>
-									<p><strong>Skills:</strong> Python, genetic algorithms, heuristics, Matplotlib, parameter tuning.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">View Repository</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/bibliosearch.png" alt="BiblioSearcher Python application" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>BiblioSearcher</h2>
-									<p>Python desktop application designed to extract bibliographic information from DOIs and URLs, organize academic references, and enrich journal information using external data sources such as CiteScore, SJR, ISSN, and quartile datasets.</p>
-									<p><strong>Technologies:</strong> Python, Tkinter, Pandas, Beautiful Soup, Requests, bibliographic metadata.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">View Repository</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/GeneSolu_3.png" alt="PCB drilling optimization project" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Metaheuristic Optimization for PCB Drilling Path Planning</h2>
-									<p>Modeled PCB drilling path planning as a combinatorial problem and developed a Genetic algorithm in Python, based in evolutionary computation concepts, to approximate the minimal tool travel distance.</p>
-									<p><strong>Skills:</strong> Python, genetic algorithms, heuristics, Matplotlib, parameter tuning.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">View Repository</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+						<p>
+							Modeled the PCB drilling sequence as a Traveling Salesman
+							Problem and developed a modular Python implementation to
+							compare a Nearest Neighbor heuristic against a Genetic
+							Algorithm. The evolutionary approach uses tournament
+							selection, ordered crossover, swap mutation, and elitism
+							to explore shorter drilling routes.
+						</p>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Technical Areas</h2>
-							<p>My academic and personal projects connect mechatronics with computer science through autonomous systems, embedded control, optimization algorithms, and engineering software tools.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-robot"></span>
-									<h3>Robotics and ROS 2</h3>
-									<p>Mobile robotics, differential-drive systems, LiDAR-based mapping, localization, navigation, and ROS 2 software integration.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-microchip"></span>
-									<h3>Embedded Systems</h3>
-									<p>Microcontroller-based control, motor drivers, PWM, encoders, ADC, serial communication, and sensor-actuator integration.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-route"></span>
-									<h3>Optimization Algorithms</h3>
-									<p>Path planning, combinatorial optimization, genetic algorithms, heuristic methods, and performance comparison.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Python Software Development</h3>
-									<p>Data processing, automation tools, desktop interfaces, Excel workflows, and scientific/engineering scripting.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cogs"></span>
-									<h3>Control and Mechatronics</h3>
-									<p>Motor control, feedback systems, mechanical-electronic integration, system modeling, and practical troubleshooting.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-chart-line"></span>
-									<h3>Technical Documentation</h3>
-									<p>Engineering reports, experiment analysis, validation workflows, project documentation, and academic communication.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="#three" class="button scrolly">Contact Me</a></li>
-							</ul>
-						</div>
-					</section>
+						<p>
+							<strong>Technologies:</strong>
+							Python, genetic algorithms, combinatorial optimization,
+							heuristics, Matplotlib, CSV data processing, and
+							parameter tuning.
+						</p>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact</h2>
-							<p>I am interested in robotics, embedded systems, computational optimization, and applied computer science projects. You can find my work on GitHub or contact me through LinkedIn or email.</p>
-							<div class="split style1">
-								<section>
-									<h3>Professional Links</h3>
-									<ul class="actions stacked">
-										<li><a href="https://github.com/Tulito27" class="button">GitHub</a></li>
-										<li><a href="https://www.linkedin.com/in/your-profile" class="button">LinkedIn</a></li>
-										<li><a href="mailto:your.email@example.com" class="button">Email</a></li>
-									</ul>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>GitHub</h3>
-											<a href="https://github.com/Tulito27">github.com/Tulito27</a>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:your.email@example.com">your.email@example.com</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/Tulito27" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/your-profile" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="mailto:your.email@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; 2026 Julio César Paredes Castillo. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+						<ul class="actions">
+							<li>
+								<a
+									href="https://github.com/JulioCParedes/pcb-drilling-path-optimization"
+									class="button"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View Repository
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- BiblioSearcher -->
+			<section>
+				<a href="#one" class="image">
+					<img
+						src="images/bibliosearch.png"
+						alt="BiblioSearcher Python desktop application"
+						data-position="25% 25%"
+					/>
+				</a>
 
-	</body>
+				<div class="content">
+					<div class="inner">
+						<h2>BiblioSearcher</h2>
+
+						<p>
+							Developed a modular Python desktop application for
+							collecting, normalizing, and enriching bibliographic
+							information from DOI identifiers and publication URLs.
+							The application retrieves metadata from external APIs,
+							matches journals using ISSN and fuzzy title comparison,
+							and generates structured multi-sheet Excel reports.
+						</p>
+
+						<p>
+							<strong>Technologies:</strong>
+							Python, Tkinter, Pandas, Requests, Crossref API,
+							Elsevier API, RapidFuzz, SCImago datasets, and Excel.
+						</p>
+
+						<ul class="actions">
+							<li>
+								<a
+									href="https://github.com/JulioCParedes/bibliosearcher"
+									class="button"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View Repository
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- VHDL Microprocessor -->
+			<section>
+				<a href="#one" class="image">
+					<img
+						src="images/microprocessor-vhdl.png"
+						alt="Simplified 8-bit microprocessor designed in VHDL"
+						data-position="center center"
+					/>
+				</a>
+
+				<div class="content">
+					<div class="inner">
+						<h2>Simplified 8-bit Microprocessor in VHDL</h2>
+
+						<p>
+							Designed and simulated a modular 8-bit accumulator-based
+							microprocessor using VHDL. The architecture integrates
+							an arithmetic logic unit, reusable registers, a shared
+							bidirectional data bus, 256 × 8-bit RAM, and a finite
+							state machine control unit supporting memory, arithmetic,
+							logic, jump, and no-operation instructions.
+						</p>
+
+						<p>
+							<strong>Technologies:</strong>
+							VHDL-2008, RTL design, finite state machines, digital
+							logic, GHDL, EDA Playground, EPWave, and functional
+							testbenches.
+						</p>
+
+						<ul class="actions">
+							<li>
+								<a
+									href="https://github.com/JulioCParedes/simplified-microprocessor-vhdl"
+									class="button"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View Repository
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Technical Areas -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Technical Areas</h2>
+
+				<p>
+					My academic, research, and personal projects connect
+					mechatronics with computer science through autonomous systems,
+					embedded control, optimization algorithms, digital hardware,
+					and engineering software development.
+				</p>
+
+				<div class="features">
+
+					<section>
+						<span class="icon solid major fa-robot"></span>
+
+						<h3>Robotics and ROS 2</h3>
+
+						<p>
+							Mobile robotics, differential-drive systems, LiDAR-based
+							mapping, localization, autonomous navigation, and ROS 2
+							software integration.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-microchip"></span>
+
+						<h3>Embedded Systems</h3>
+
+						<p>
+							Microcontroller-based control, motor drivers, PWM,
+							encoders, serial communication, and sensor-actuator
+							integration.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-route"></span>
+
+						<h3>Optimization Algorithms</h3>
+
+						<p>
+							Combinatorial optimization, genetic algorithms,
+							heuristic methods, path planning, parameter tuning, and
+							performance comparison.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-code"></span>
+
+						<h3>Python Software Development</h3>
+
+						<p>
+							Modular applications, data processing, automation tools,
+							desktop interfaces, API integration, Excel workflows,
+							and engineering scripting.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-cogs"></span>
+
+						<h3>Control and Mechatronics</h3>
+
+						<p>
+							Motor control, feedback systems, mechanical-electronic
+							integration, system modeling, sensor integration, and
+							practical troubleshooting.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-project-diagram"></span>
+
+						<h3>Digital Design and VHDL</h3>
+
+						<p>
+							RTL modeling, finite state machines, digital datapaths,
+							ALU design, registers, memory interfaces, testbenches,
+							and waveform-based verification.
+						</p>
+					</section>
+
+				</div>
+
+				<ul class="actions">
+					<li>
+						<a href="#three" class="button scrolly">Contact Me</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Contact</h2>
+
+				<p>
+					I am interested in opportunities and collaborations involving
+					robotics, embedded systems, computational optimization, digital
+					design, and applied computer science.
+				</p>
+
+				<div class="split style1">
+
+					<section>
+						<h3>Let's connect</h3>
+
+						<p>
+							You can explore my projects on GitHub, view my
+							professional background on LinkedIn, or contact me
+							directly by email.
+						</p>
+
+						<ul class="actions stacked">
+							<li>
+								<a
+									href="https://github.com/JulioCParedes"
+									class="button"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									GitHub
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="https://mx.linkedin.com/in/julioparedes2728"
+									class="button"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									LinkedIn
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="mailto:juce.castillo27@gmail.com"
+									class="button"
+								>
+									Email
+								</a>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul class="contact">
+
+							<li>
+								<h3>GitHub</h3>
+
+								<a
+									href="https://github.com/JulioCParedes"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									github.com/JulioCParedes
+								</a>
+							</li>
+
+							<li>
+								<h3>LinkedIn</h3>
+
+								<a
+									href="https://mx.linkedin.com/in/julioparedes2728"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									linkedin.com/in/julioparedes2728
+								</a>
+							</li>
+
+							<li>
+								<h3>Email</h3>
+
+								<a href="mailto:juce.castillo27@gmail.com">
+									juce.castillo27@gmail.com
+								</a>
+							</li>
+
+							<li>
+								<h3>Professional Links</h3>
+
+								<ul class="icons">
+									<li>
+										<a
+											href="https://github.com/JulioCParedes"
+											class="icon brands fa-github"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="GitHub profile"
+										>
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+
+									<li>
+										<a
+											href="https://mx.linkedin.com/in/julioparedes2728"
+											class="icon brands fa-linkedin-in"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="LinkedIn profile"
+										>
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+
+									<li>
+										<a
+											href="mailto:juce.castillo27@gmail.com"
+											class="icon solid fa-envelope"
+											aria-label="Send email"
+										>
+											<span class="label">Email</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</section>
+
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>
+					&copy; 2026 Julio César Paredes Castillo. All rights reserved.
+				</li>
+
+				<li>
+					Design:
+					<a
+						href="https://html5up.net"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						HTML5 UP
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+```
+
 </html>
